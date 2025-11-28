@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// Pixabay から画像を検索し、結果の画像URLを標準出力に表示するスクリプト
+
 const fetch = (...args) =>
   import('node-fetch').then(({default: fetch}) => fetch(...args));
 
