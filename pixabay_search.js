@@ -5,6 +5,9 @@
 // 使用例：(PowerShell)
 // node pixabay_search.js cat | % { $name = Split-Path $_ -Leaf; Invoke-WebRequest -Uri $_ -OutFile $name }
 
+// 解説ブログ記事
+// https://maywork.net/computer/pixabay-search-js/
+
 const fetch = (...args) =>
   import('node-fetch').then(({default: fetch}) => fetch(...args));
 
