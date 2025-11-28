@@ -2,6 +2,9 @@
 
 // Pixabay から画像を検索し、結果の画像URLを標準出力に表示するスクリプト
 
+// 使用例：(PowerShell)
+// node pixabay_search.js cat | % { $name = Split-Path $_ -Leaf; Invoke-WebRequest -Uri $_ -OutFile $name }
+
 const fetch = (...args) =>
   import('node-fetch').then(({default: fetch}) => fetch(...args));
 
